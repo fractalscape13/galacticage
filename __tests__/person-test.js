@@ -14,8 +14,8 @@ describe('Person', () => {
   });
 
   test('convert user age into Mercury equivalents', () => {
-    user.setAge(30);
+    user.setAge(31);
     user.setAgeMercury();
-    expect(user.ageMercury).toEqual(125);
+    expect(user.ageMercury).toEqual(129);
   });
 });

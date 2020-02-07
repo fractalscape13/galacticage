@@ -20,6 +20,6 @@ export class Person {
   }
 
   setAgeMercury() {
-    this.ageMercury = (this.age / .24)
+    this.ageMercury = parseInt(this.age / .24)
   }
 }
