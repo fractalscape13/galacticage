@@ -47,9 +47,17 @@ export class Person {
   setPast() {
     if (this.remainingYears < 0) {
       this.pastYears = (-this.remainingYears);
+    } 
+    if (this.remainingMercury < 0) {
       this.pastMercury = (-this.remainingMercury);
+    }
+    if (this.remainingVenus < 0) {
       this.pastVenus = (-this.remainingVenus);
+    }
+    if (this.remainingMars < 0) {
       this.pastMars = (-this.remainingMars);
+    }
+    if (this.remainingJupiter < 0) {
       this.pastJupiter = (-this.remainingJupiter);
     }
   }

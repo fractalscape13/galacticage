@@ -39,7 +39,10 @@ describe('Person', () => {
     user.setRemaining();
     user.setPast();
     expect(user.pastYears).toEqual(3);
+    expect(user.pastMercury).toEqual(12);
+    expect(user.pastVenus).toEqual(4);
     expect(user.pastMars).toEqual(1);
+    expect(user.pastJupiter).toEqual(0);
   });
 
 });
