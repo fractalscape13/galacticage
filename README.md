@@ -47,7 +47,7 @@ _All dependencies are listed in package.json_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_{No known bugs}_
 
 ## Support and contact details
 
