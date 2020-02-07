@@ -19,9 +19,15 @@ $(document).ready(function() {
     let currentPlanet = $(this).attr("value");
     user.showInfo(currentPlanet);
     console.log(user.currentPlanet);
-    $("#outputPlanet").append(user.currentPlanet);
-    $("#outputAge").append(user.currentAge);
-    $("#outputRemaining").append(user.currentRemaining);
+    $("#outputPlanet").text(user.currentPlanet);
+    $("#outputAge").text(user.currentAge);
+    if (user.currentRemaining > 0) {
+      $("#outputRemaining").text(user.currentRemaining);
+      $("#outputRemainBox").show();
+    } else {
+      $("#outputPast").text(user.currentPast);
+      $("#outputPastBox").show();
+    }
     $("#output").fadeIn();
   });
 });

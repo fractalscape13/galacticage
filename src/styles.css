@@ -94,3 +94,7 @@ a {
   color: rgb(197, 197, 168);
   font-weight: bold;
 }
+
+#outputRemainBox, #outputPastBox {
+  display: none;
+}
