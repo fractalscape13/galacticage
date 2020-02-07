@@ -12,9 +12,3 @@ h1 {
   color: rgb(173, 173, 233);
   margin: 25px;
 }
-
-#hidden {
-  display: none;
-  color: red;
-  border: 3px dotted red;
-}

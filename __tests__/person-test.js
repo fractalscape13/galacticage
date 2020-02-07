@@ -21,7 +21,6 @@ describe('Person', () => {
   });
 
   test('check expected remaining years based on user age', () => {
-    user.setRemaining();
     expect(user.remainingYears).toEqual(41);
     expect(user.remainingMercury).toEqual(171);
     expect(user.remainingVenus).toEqual(66);
@@ -36,8 +35,6 @@ describe('Person', () => {
 
   test('if user is older than life expectancy, update years lived past life expectancy', () => {
     user.setAge(75, "avg");
-    user.setRemaining();
-    user.setPast();
     expect(user.pastYears).toEqual(3);
     expect(user.pastMercury).toEqual(12);
     expect(user.pastVenus).toEqual(4);

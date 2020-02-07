@@ -31,38 +31,29 @@ export class Person {
       if (level === "below avg") {
         this.lifeX -= 5;
       }
+      this.remainingYears = (this.lifeX - this.age);
+      this.remainingMercury = (parseInt(this.lifeX / .24) - this.ageMercury);
+      this.remainingVenus = (parseInt(this.lifeX / .62)- this.ageVenus);
+      this.remainingMars = (parseInt(this.lifeX / 1.88) - this.ageMars);
+      this.remainingJupiter = (parseInt(this.lifeX / 11.86) - this.ageJupiter);
+      if (this.remainingYears < 0) {
+        this.pastYears = (-this.remainingYears);
+      } 
+      if (this.remainingMercury < 0) {
+        this.pastMercury = (-this.remainingMercury);
+      }
+      if (this.remainingVenus < 0) {
+        this.pastVenus = (-this.remainingVenus);
+      }
+      if (this.remainingMars < 0) {
+        this.pastMars = (-this.remainingMars);
+      }
+      if (this.remainingJupiter < 0) {
+        this.pastJupiter = (-this.remainingJupiter);
+      }
     } else {
       location.reload();
     }
   }
-
-  setRemaining() {
-    this.remainingYears = (this.lifeX - this.age);
-    this.remainingMercury = (parseInt(this.lifeX / .24) - this.ageMercury);
-    this.remainingVenus = (parseInt(this.lifeX / .62)- this.ageVenus);
-    this.remainingMars = (parseInt(this.lifeX / 1.88) - this.ageMars);
-    this.remainingJupiter = (parseInt(this.lifeX / 11.86) - this.ageJupiter);
-  }
-
-  setPast() {
-    if (this.remainingYears < 0) {
-      this.pastYears = (-this.remainingYears);
-    } 
-    if (this.remainingMercury < 0) {
-      this.pastMercury = (-this.remainingMercury);
-    }
-    if (this.remainingVenus < 0) {
-      this.pastVenus = (-this.remainingVenus);
-    }
-    if (this.remainingMars < 0) {
-      this.pastMars = (-this.remainingMars);
-    }
-    if (this.remainingJupiter < 0) {
-      this.pastJupiter = (-this.remainingJupiter);
-    }
-  }
-
-
-
 
 }
