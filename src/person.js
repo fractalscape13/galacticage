@@ -16,10 +16,16 @@ export class Person {
     this.pastVenus = 0;
     this.pastMars = 0;
     this.pastJupiter = 0;
+    this.currentPlanet = "";
+    this.currentAge = 0;
+    this.currentRemaining = 0;
+    this.currentPast = 0;
   }
 
   setAge(age, level) {
+    /* eslint-disable */
     if (age !== NaN) {
+      /* eslint-enable */
       this.age = age;
       this.ageMercury = parseInt(this.age / .24);
       this.ageVenus = parseInt(this.age / .62);
@@ -53,6 +59,33 @@ export class Person {
       }
     } else {
       location.reload();
+    }
+  }
+
+  showInfo(current) {
+    if (current == "mercury") {
+      this.currentPlanet = "Mercury";
+      this.currentAge = this.ageMercury;
+      this.currentRemaining = this.remainingMercury;
+      this.currentPast = this.pastMercury;
+    }
+    if (current == "venus") {
+      this.currentPlanet = "Venus";
+      this.currentAge = this.ageVenus;
+      this.currentRemaining = this.remainingVenus;
+      this.currentPast = this.pastVenus;
+    }
+    if (current == "mars") {
+      this.currentPlanet = "Mars";
+      this.currentAge = this.ageMars;
+      this.currentRemaining = this.remainingMars;
+      this.currentPast = this.pastMars;
+    }
+    if (current == "jupiter") {
+      this.currentPlanet = "Jupiter";
+      this.currentAge = this.ageJupiter;
+      this.currentRemaining = this.remainingJupiter;
+      this.currentPast = this.pastJupiter;
     }
   }
 

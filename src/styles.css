@@ -26,6 +26,7 @@ h3 {
   margin-left: 150px;
   margin-right: 150px;
   padding: 20px;
+  text-align: center;
 }
 
 input {
@@ -60,4 +61,13 @@ img {
   width: 100px;
 }
 
+img:hover {
+  cursor: pointer;
+}
 
+a {
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  margin-top: 80px;
+}

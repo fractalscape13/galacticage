@@ -17,6 +17,8 @@ $(document).ready(function() {
   });
   $(".planet").click(function() {
     let currentPlanet = $(this).attr("value");
-    console.log(currentPlanet);
+    user.showInfo(currentPlanet);
+    console.log(user.currentPlanet);
+    $("#outputInfo").text(user.currentPlanet);
   });
 });
