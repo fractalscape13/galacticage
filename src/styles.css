@@ -6,6 +6,7 @@ body {
   background-image: linear-gradient(black, rgb(0, 0, 80), rgb(57, 0, 97), black);
   font-family: monospace;
   text-align: center;
+  color: rgb(160, 160, 160);
 }
 
 h1 {
@@ -20,7 +21,7 @@ h3 {
 }
 
 .box {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .2);
   margin: 50px;
   margin-left: 150px;
   margin-right: 150px;
@@ -39,12 +40,20 @@ input {
   font-size: 140%;
 }
 
+label {
+  color: rgb(151, 151, 149);
+}
+
 button {
   border: 3px solid black;
   border-radius: 15px;
   background-image: radial-gradient(ivory, rgb(7, 54, 40));
   margin: 25px;
   font-size: 140%;
+}
+
+.result {
+  display: none;
 }
 
 

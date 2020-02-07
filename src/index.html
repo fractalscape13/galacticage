@@ -8,21 +8,31 @@
 </head>
 <body class="container">
   <h1>&#x1F30E; Galactic Age Calculator &#x1F30E;</h1>
-  <h3>Enter your age in Earth years and see how old you are on other planets!</h3>
+  
+  <div class="start">
+    <h3>Enter your age in Earth years and see how old you are on other planets!</h3>
+    <div class="box">
+      <form id="form">
+        <label for="">Enter your Earth age (whole numbers only, plz)</label><br>
+        <input type="text" name="age" id="age">
+        
+        <select class="form-control" id="health">
+          <option> How would you describe your health in general? </option>
+          <option value="above avg" id="">Above average</option>
+          <option value="avg" id="">Average</option>
+          <option value="below avg" id="">Below average</option>
+        </select>
+        <button type="submit" id="startbtn">Submit!</button>
+      </form>
+    </div>
+  </div>
 
-  <div class="box">
-    <form id="form">
-      <label for="">Enter your Earth age (whole numbers only, plz)</label><br>
-      <input type="text" name="age" id="age">
-      
-      <select class="form-control" id="health">
-        <option> How would you describe your health in general? </option>
-        <option value="above avg" id="">Above average</option>
-        <option value="avg" id="">Average</option>
-        <option value="below avg" id="">Below average</option>
-      </select>
-      <button type="submit" id="startbtn">Submit!</button>
-    </form>
+  <div class="result">
+    <h3>Here's the output</h3>
+    <div class="box">
+      <p>some stuff n things</p>
+      <a href="index.html">Start over</a>
+    </div>
   </div>
 </body>
 </html>
