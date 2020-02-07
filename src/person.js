@@ -28,7 +28,13 @@ export class Person {
 
   setRemaining() {
     this.remainingYears = (this.lifeX - this.age);
+    this.remainingMercury = (parseInt(this.lifeX / .24) - this.ageMercury);
+    this.remainingVenus = (parseInt(this.lifeX / .62)- this.ageVenus);
+    this.remainingMars = (parseInt(this.lifeX / 1.88) - this.ageMars);
+    this.remainingJupiter = (parseInt(this.lifeX / 11.86) - this.ageJupiter);
   }
+
+
 
 
 }

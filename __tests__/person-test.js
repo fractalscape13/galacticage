@@ -26,6 +26,10 @@ describe('Person', () => {
     user.setAge(31);
     user.setRemaining();
     expect(user.remainingYears).toEqual(41);
+    expect(user.remainingMercury).toEqual(171);
+    expect(user.remainingVenus).toEqual(66);
+    expect(user.remainingMars).toEqual(22);
+    expect(user.remainingJupiter).toEqual(4);
   })
 
 });
