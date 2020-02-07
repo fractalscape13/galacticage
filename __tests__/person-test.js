@@ -25,7 +25,7 @@ describe('Person', () => {
   test('check expected remaining years based on user age', () => {
     user.setAge(31);
     user.setRemaining();
-    expect(user.remainingYears).toEqual(42);
+    expect(user.remainingYears).toEqual(41);
   })
 
 });
