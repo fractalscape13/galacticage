@@ -11,6 +11,11 @@ export class Person {
     this.remainingVenus = 0;
     this.remainingMars = 0;
     this.remainingJupiter = 0;
+    this.pastYears = 0;
+    this.pastMercury = 0;
+    this.pastVenus = 0;
+    this.pastMars = 0;
+    this.pastJupiter = 0;
   }
 
   setAge(age, level) {
@@ -37,6 +42,12 @@ export class Person {
     this.remainingVenus = (parseInt(this.lifeX / .62)- this.ageVenus);
     this.remainingMars = (parseInt(this.lifeX / 1.88) - this.ageMars);
     this.remainingJupiter = (parseInt(this.lifeX / 11.86) - this.ageJupiter);
+  }
+
+  setPast() {
+    if (this.remainingYears < 0) {
+      this.pastYears = (-this.remainingYears)
+    }
   }
 
 

@@ -34,4 +34,11 @@ describe('Person', () => {
     expect(user.lifeX).toEqual(77);
   });
 
+  test('if user is older than life expectancy, update years lived past life expectancy', () => {
+    user.setAge(75, "avg");
+    user.setRemaining();
+    user.setPast();
+    expect(user.pastYears).toEqual(-3);
+  });
+
 });
