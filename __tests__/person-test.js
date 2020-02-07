@@ -29,8 +29,9 @@ describe('Person', () => {
     expect(user.remainingJupiter).toEqual(4);
   });
 
-  // test('update user life expectancy based on inputted health value', () => {
-
-  // })
+  test('update user life expectancy based on inputted health value', () => {
+    user.setHealth("above avg");
+    expect(user.lifeX).toEqual(72);
+  });
 
 });
