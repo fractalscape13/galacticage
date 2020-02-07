@@ -12,3 +12,15 @@ h1 {
   color: rgb(173, 173, 233);
   margin: 25px;
 }
+
+h3 {
+  color: rgb(71, 71, 180);
+}
+
+.box {
+  background-color: rgba(255, 255, 255, .5);
+  margin: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+}

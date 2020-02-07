@@ -6,8 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Galactic Age Calculator</title>
 </head>
-<body>
-  <h1>Galactic Age Calculator</h1>
-  
+<body class="container">
+  <h1>&#x1F30E; Galactic Age Calculator &#x1F30E;</h1>
+  <h3>Enter your age in Earth years and see how old you are on other planets!</h3>
+
+  <div class="box">
+    <form id="form">
+      <input type="text" name="age" id="age">
+      <label for="">Enter your Earth age (whole numbers only, plz)</label>
+      
+      <select class="form-control" id="health">
+        <option value="0"> (choose size) </option>
+        <option value="20" id="">Large -  18 inch ($20)</option>
+        <option value="15" id="">Medium - 14 inch ($15)</option>
+        <option value="10" id="">Small - 10 inch ($10)</option>
+      </select>
+      <button type="submit" id="startbtn">Submit!</button>
+    </form>
+  </div>
 </body>
 </html>
