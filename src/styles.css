@@ -45,6 +45,11 @@ label {
   color: rgb(151, 151, 149);
 }
 
+.form-control {
+  margin: auto;
+  width: 200px;
+}
+
 button {
   border: 3px solid black;
   border-radius: 15px;
@@ -67,7 +72,8 @@ img:hover {
 
 a {
   text-align: center;
-  display: inline-block;
+  display: block;
   margin: auto;
   margin-top: 80px;
+  color: rgb(170, 170, 194);
 }
