@@ -10,6 +10,6 @@ describe('Person', () => {
 
   test('user enters age', () => {
     user.setAge(30);
-    expect(user.age).toEqual(NaN);
+    expect(user.age).toEqual(30);
   });
 });
