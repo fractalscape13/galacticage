@@ -6,7 +6,7 @@ describe('Person', () => {
 
   beforeEach(() => {
     user = new Person();
-    user.setAge(31);
+    user.setAge(31, "avg");
   });
 
   test('user enters age', () => {
@@ -30,7 +30,7 @@ describe('Person', () => {
   });
 
   test('update user life expectancy based on inputted health value', () => {
-    user.setHealth("above avg");
+    user.setAge(31, "above avg");
     expect(user.lifeX).toEqual(77);
   });
 
