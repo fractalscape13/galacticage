@@ -22,16 +22,16 @@ describe('Person', () => {
   test('convert user age into Venus equivalent', () => {
     user.setAge(31);
     user.setAgeVenus();
-    expect(user.ageVenus).toEqual(129);
+    expect(user.ageVenus).toEqual(50);
   });
   test('convert user age into Mars equivalent', () => {
     user.setAge(31);
     user.setAgeMars();
-    expect(user.ageMars).toEqual(129);
+    expect(user.ageMars).toEqual(16);
   });
   test('convert user age into Jupiter equivalent', () => {
     user.setAge(31);
     user.setAgeJupiter();
-    expect(user.ageJupiter).toEqual(129);
+    expect(user.ageJupiter).toEqual(2);
   });
 });
