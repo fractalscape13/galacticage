@@ -15,6 +15,8 @@ h1 {
 
 h3 {
   color: rgb(71, 71, 180);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .box {
@@ -24,3 +26,26 @@ h3 {
   margin-right: 150px;
   padding: 20px;
 }
+
+input {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  color: ivory;
+  width: 25%;
+  height: 40px;
+  margin-bottom: 25px;
+  font-size: 140%;
+}
+
+button {
+  border: 3px solid black;
+  border-radius: 15px;
+  background-image: radial-gradient(ivory, rgb(7, 54, 40));
+  margin: 25px;
+  font-size: 140%;
+}
+
+
+
