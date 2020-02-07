@@ -38,7 +38,7 @@ describe('Person', () => {
     user.setAge(75, "avg");
     user.setRemaining();
     user.setPast();
-    expect(user.pastYears).toEqual(-3);
+    expect(user.pastYears).toEqual(3);
   });
 
 });
