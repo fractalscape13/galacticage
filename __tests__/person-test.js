@@ -24,6 +24,7 @@ describe('Person', () => {
 
   test('check expected remaining years based on user age', () => {
     user.setAge(31);
+    user.setGalacticAge();
     user.setRemaining();
     expect(user.remainingYears).toEqual(41);
     expect(user.remainingMercury).toEqual(171);
