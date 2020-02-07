@@ -15,7 +15,6 @@ describe('Person', () => {
 
   test('convert user age into galactic equivalents', () => {
     user.setAge(31);
-    user.setGalacticAge();
     expect(user.ageMercury).toEqual(129);
     expect(user.ageVenus).toEqual(50);
     expect(user.ageMars).toEqual(16);
@@ -24,7 +23,6 @@ describe('Person', () => {
 
   test('check expected remaining years based on user age', () => {
     user.setAge(31);
-    user.setGalacticAge();
     user.setRemaining();
     expect(user.remainingYears).toEqual(41);
     expect(user.remainingMercury).toEqual(171);

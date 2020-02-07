@@ -16,14 +16,20 @@ export class Person {
   setAge(age) {
     if (age !== NaN) {
     this.age = age;
-    }
-  }
-
-  setGalacticAge() {
     this.ageMercury = parseInt(this.age / .24)
     this.ageVenus = parseInt(this.age / .62)
     this.ageMars = parseInt(this.age / 1.88)
     this.ageJupiter = parseInt(this.age / 11.86)
+    }
+  }
+
+  setHealth(level) {
+    if (level === "above avg") {
+      this.lifeX += 5;
+    }
+    if (level === "below avg") {
+      this.lifeX -= 5;
+    }
   }
 
   setRemaining() {
