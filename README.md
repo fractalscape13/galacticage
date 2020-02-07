@@ -1,12 +1,12 @@
 # _Galactic Age Calculator_
 
-#### _Converts age to age on other planets in our solar system, {2/7/2020}_
+#### _Converts age in Earth years to revolutionary age on other planets in our solar system, {2/7/2020}_
 
 #### By _**Joseph Wangemann**_
 
 ## Description
 
-_This application will take in a user's age and then have options to convert it into years on another planet_
+_This application will take in a user's age and then have options to show the converted years on another planet_
 
 ## Setup/Installation Requirements
 
@@ -55,7 +55,7 @@ _Email me with any questions or comments at fractalscape13@gmail.com_
 
 ## Technologies Used
 
-_Built using Javascript/JQuery/HTML/CSS/Bootstrap, Webpack, node.js, testing with Jest/Babel_
+_Javascript, JQuery, HTML, CSS/Bootstrap, Webpack, node.js, Jest, Babel, ESLint_
 
 ### License
 

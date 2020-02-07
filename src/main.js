@@ -11,14 +11,17 @@ $(document).ready(function() {
     user = new Person();
     let age = $("input#age").val();
     let health = $("#health").val();
-    user.setAge(age, health);
-    $(".start").hide();
-    $(".result").fadeIn();
+    if (age > 0) {
+      user.setAge(age, health);
+      $(".start").hide();
+      $(".result").fadeIn();
+    } else {
+      $("#emphasize").addClass("please");
+    }
   });
   $(".planet").click(function() {
     let currentPlanet = $(this).attr("value");
     user.showInfo(currentPlanet);
-    console.log(user.currentPlanet);
     $("#outputPlanet").text(user.currentPlanet);
     $("#outputAge").text(user.currentAge);
     if (user.currentRemaining > 0) {

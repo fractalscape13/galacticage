@@ -98,3 +98,9 @@ a {
 #outputRemainBox, #outputPastBox {
   display: none;
 }
+
+.please {
+  color: rgb(218, 176, 176);
+  font-weight: bold;
+  font-size: 115%;
+}
