@@ -22,4 +22,17 @@ export class Person {
   setAgeMercury() {
     this.ageMercury = parseInt(this.age / .24)
   }
+
+  setAgeVenus() {
+    this.ageVenus = parseInt(this.age / .62)
+  }
+
+  setAgeMars() {
+    this.ageMars = parseInt(this.age / 1.88)
+  }
+  
+  setAgeJupiter() {
+    this.ageJupiter = parseInt(this.age / 11.86)
+  }
+
 }

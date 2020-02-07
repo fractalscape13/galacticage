@@ -9,13 +9,29 @@ describe('Person', () => {
   });
 
   test('user enters age', () => {
-    user.setAge(30);
-    expect(user.age).toEqual(30);
+    user.setAge(31);
+    expect(user.age).toEqual(31);
   });
 
-  test('convert user age into Mercury equivalents', () => {
+  test('convert user age into Mercury equivalent', () => {
     user.setAge(31);
     user.setAgeMercury();
     expect(user.ageMercury).toEqual(129);
+  });
+
+  test('convert user age into Venus equivalent', () => {
+    user.setAge(31);
+    user.setAgeVenus();
+    expect(user.ageVenus).toEqual(129);
+  });
+  test('convert user age into Mars equivalent', () => {
+    user.setAge(31);
+    user.setAgeMars();
+    expect(user.ageMars).toEqual(129);
+  });
+  test('convert user age into Jupiter equivalent', () => {
+    user.setAge(31);
+    user.setAgeJupiter();
+    expect(user.ageJupiter).toEqual(129);
   });
 });
