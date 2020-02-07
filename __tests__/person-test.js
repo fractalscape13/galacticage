@@ -31,7 +31,7 @@ describe('Person', () => {
 
   test('update user life expectancy based on inputted health value', () => {
     user.setHealth("above avg");
-    expect(user.lifeX).toEqual(72);
+    expect(user.lifeX).toEqual(77);
   });
 
 });
