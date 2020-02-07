@@ -14,6 +14,9 @@ $(document).ready(function() {
     user.setAge(age, health);
     $(".start").hide();
     $(".result").fadeIn();
-    console.log(user);
+  });
+  $(".planet").click(function() {
+    let currentPlanet = $(this).attr("value");
+    console.log(currentPlanet);
   });
 });

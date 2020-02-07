@@ -20,11 +20,11 @@ export class Person {
 
   setAge(age, level) {
     if (age !== NaN) {
-    this.age = age;
-    this.ageMercury = parseInt(this.age / .24);
-    this.ageVenus = parseInt(this.age / .62);
-    this.ageMars = parseInt(this.age / 1.88);
-    this.ageJupiter = parseInt(this.age / 11.86);
+      this.age = age;
+      this.ageMercury = parseInt(this.age / .24);
+      this.ageVenus = parseInt(this.age / .62);
+      this.ageMars = parseInt(this.age / 1.88);
+      this.ageJupiter = parseInt(this.age / 11.86);
       if (level === "above avg") {
         this.lifeX += 5;
       }

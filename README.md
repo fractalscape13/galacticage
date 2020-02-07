@@ -55,7 +55,7 @@ _Email me with any questions or comments at fractalscape13@gmail.com_
 
 ## Technologies Used
 
-_Built using Javascript/JQuery/HTML/CSS/Bootstrap, Webpack, testing with Jest/Babel_
+_Built using Javascript/JQuery/HTML/CSS/Bootstrap, Webpack, node.js, testing with Jest/Babel_
 
 ### License
 
