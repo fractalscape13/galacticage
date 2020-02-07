@@ -19,7 +19,7 @@ export class Person {
     }
   }
 
-  setMercuryAge() {
-    this.ageMercury = this.age / .24
+  setAgeMercury() {
+    this.ageMercury = (this.age / .24)
   }
 }

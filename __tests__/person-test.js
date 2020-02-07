@@ -12,4 +12,10 @@ describe('Person', () => {
     user.setAge(30);
     expect(user.age).toEqual(30);
   });
+
+  test('convert user age into galactic equivalents', () => {
+    user.setAge(30);
+    user.setAgeMercury();
+    expect(user.ageMercury).toEqual(100);
+  });
 });
