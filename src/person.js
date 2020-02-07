@@ -26,5 +26,9 @@ export class Person {
     this.ageJupiter = parseInt(this.age / 11.86)
   }
 
+  setRemaining() {
+    this.remainingYears = (this.lifeX - this.age);
+  }
+
 
 }
