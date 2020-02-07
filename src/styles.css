@@ -47,7 +47,7 @@ label {
 button {
   border: 3px solid black;
   border-radius: 15px;
-  background-image: radial-gradient(ivory, rgb(7, 54, 40));
+  background-image: radial-gradient(rgb(175, 175, 174), rgb(1, 19, 13));
   margin: 25px;
   font-size: 140%;
 }
@@ -56,5 +56,8 @@ button {
   display: none;
 }
 
+img {
+  width: 100px;
+}
 
 
