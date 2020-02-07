@@ -1,37 +1,49 @@
-# _{Application Name}_
+# _{Galactic Age Calculator}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Converts age to age on other planets in our solar system}, {2/7/2020}_
 
 #### By _**Joseph Wangemann**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{This application will take in a user's age and then have options to convert it into years on another planet}_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone from remote repository https://github.com/fractalscape13/galacticage_
+* _Run 'npm install'_
+* _Run 'npm run start' to open in live server_
+* _Open files in text editor to view code_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+_All dependencies are listed in package.json_
 
 ## Specifications
 
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
-* _This happens when a user does something_
-    * _Example: Input: Click
-    * _Output: Something shows
+* _Takes in a user's age_
+    * _Example: Input: Form submission
+    * _Output: User's age added to object property
+* _Returns user age in Mercury years_
+    * _Example: Input: User inputs age 30
+    * _Output: Shows age in Mercury years to be 125
+* _Returns user age in Venus years_
+    * _Example: Input: User inputs age 50
+    * _Output: Shows age in Venus years to be 80
+* _Returns user age in Mars years_
+    * _Example: Input: User inputs age 25
+    * _Output: Shows age in Mars years to be 13
+* _Returns user age in Jupiter years_
+    * _Example: Input: User inputs age 25
+    * _Output: Shows age in Mars years to be 2
+* _Returns user life expectancy_
+    * _Example: Input: User inputs age 25 and general health level to be average
+    * _Output: Shows life expectancy on Earth to be 72 years
+* _Returns remaining user life expectancy on other planets_
+    * _Example: Input: User inputs age 25 and general health level to be average
+    * _Output: Shows remaining life expectancy on Mars to be 25 Mars years
+* _Returns how many years past life expectancy on other planets the user has already lived_
+    * _Example: Input: User inputs age 78 and general health level to be average
+    * _Output: Shows user has lived 9 Venus years past average life expectancy 
+
 
 ## Known Bugs
 
@@ -39,11 +51,11 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{Email me with any questions or comments at fractalscape13@gmail.com}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_{Built using Javascript, Webpack, testing with Jest/Babel}_
 
 ### License
 
