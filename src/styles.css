@@ -64,6 +64,7 @@ button {
 
 img {
   width: 100px;
+  margin: 30px;
 }
 
 img:hover {
@@ -75,5 +76,21 @@ a {
   display: block;
   margin: auto;
   margin-top: 80px;
-  color: rgb(170, 170, 194);
+  color: rgb(185, 157, 216);
+}
+
+#output {
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+#outputPlanet {
+  font-size: 115%;
+  color: rgb(197, 197, 168);
+  font-weight: bold;
 }

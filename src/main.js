@@ -19,6 +19,9 @@ $(document).ready(function() {
     let currentPlanet = $(this).attr("value");
     user.showInfo(currentPlanet);
     console.log(user.currentPlanet);
-    $("#outputInfo").text(user.currentPlanet);
+    $("#outputPlanet").append(user.currentPlanet);
+    $("#outputAge").append(user.currentAge);
+    $("#outputRemaining").append(user.currentRemaining);
+    $("#output").fadeIn();
   });
 });
