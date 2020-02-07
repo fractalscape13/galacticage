@@ -39,6 +39,7 @@ describe('Person', () => {
     user.setRemaining();
     user.setPast();
     expect(user.pastYears).toEqual(3);
+    expect(user.pastMars).toEqual(1);
   });
 
 });
