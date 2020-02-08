@@ -6,13 +6,14 @@
 
 ## Description
 
-_This application will take in a user's age and then have options to show the converted years on another planet_
+_This application will take in a user's age and then have options to show the converted years on another planet, along with information about life expectancy on each planet_
 
 ## Setup/Installation Requirements
 
+* _Setup assumes the use of git and npm_
 * _Clone from remote repository https://github.com/fractalscape13/galacticage_
-* _Run 'npm install'_
-* _Run 'npm run start' to open in live server_
+* _In terminal, run 'npm install'_
+* _In terminal, run 'npm run start' to open in live server_
 * _Open files in text editor to view code_
 
 _All dependencies are listed in package.json_

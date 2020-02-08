@@ -8,35 +8,32 @@
 </head>
 <body>
   <h1>&#x1F30E; Galactic Age Calculator &#x1F30E;</h1>
-  
   <div class="start" class="container">
     <h3>Enter your age in Earth years and see how old you are on other planets!</h3>
     <div class="box">
       <form id="form">
-        <label for="">Enter your Earth age <span id="emphasize">(whole numbers only, plz)</span></label><br>
+        <label>Enter your Earth age <span id="emphasize">(whole numbers only, plz)</span></label><br>
         <input type="text" name="age" id="age">
-        
         <p>How would you describe your health in general?</p>
         <select class="form-control" id="health">
           <option> (choose one) </option>
-          <option value="above avg" id="">Above average</option>
-          <option value="avg" id="">Average</option>
-          <option value="below avg" id="">Below average</option>
+          <option value="above avg">Above average</option>
+          <option value="avg">Average</option>
+          <option value="below avg">Below average</option>
         </select>
         <button type="submit" id="startbtn">Submit!</button>
       </form>
     </div>
   </div>
-
   <div class="result">
     <h3>Click on a planet to see your planetary age</h3>
     <div class="box" class="container">
       <div class="row">
         <div class="col-md-3">
-            <img class="planet" value="mercury" src="http://aux.iconspalace.com/uploads/1196318767.png" alt="mercury">
+          <img class="planet" value="mercury" src="http://aux.iconspalace.com/uploads/1196318767.png" alt="mercury">
         </div>
         <div class="col-md-3">
-            <img class="planet" value="venus" src="http://aux2.iconspalace.com/uploads/41648032.png" alt="venus">
+          <img class="planet" value="venus" src="http://aux2.iconspalace.com/uploads/41648032.png" alt="venus">
         </div>
         <div class="col-md-3">
           <img class="planet" value="mars" src="http://aux.iconspalace.com/uploads/1800015699.png" alt="mars">
@@ -47,8 +44,8 @@
       <div id="output">
         <p>On <span id="outputPlanet"></span>,</p><br>
         <p>you are <span id="outputAge"></span> years old.</p>
-        <p id="outputRemainBox">You have about <span id="outputRemaining"></span> years left on this planet.</p>
-        <p id="outputPastBox">You have been alive about <span id="outputPast"></span> years more than the average life expectancy on this planet for a creature with your general level of health.</p>
+        <p id="outputRemainBox">You have about <span id="outputRemaining"></span> revolutions left on this planet.</p>
+        <p id="outputPastBox">You have been alive about <span id="outputPast"></span> years longer than the average life expectancy on this planet for a creature with your general level of health.</p>
       </div>
     </div>
     <a href="index.html">Start over</a>

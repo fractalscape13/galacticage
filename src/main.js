@@ -6,6 +6,7 @@ import { Person } from './person';
 
 $(document).ready(function() {
   let user;
+  //click function to submit age & level of health
   $("#form").submit(function() {
     event.preventDefault();
     user = new Person();
@@ -19,6 +20,7 @@ $(document).ready(function() {
       $("#emphasize").addClass("please");
     }
   });
+  //click function to see information for each planet
   $(".planet").click(function() {
     let currentPlanet = $(this).attr("value");
     user.showInfo(currentPlanet);

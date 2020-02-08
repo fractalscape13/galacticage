@@ -41,5 +41,4 @@ describe('Person', () => {
     expect(user.pastMars).toEqual(1);
     expect(user.pastJupiter).toEqual(0);
   });
-
 });
