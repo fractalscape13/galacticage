@@ -9,11 +9,11 @@ $(document).ready(function() {
   //click function to submit age & level of health
   $("#form").submit(function() {
     event.preventDefault();
-    user = new Person();
     let age = $("input#age").val();
+    user = new Person(age);
     let health = $("#health").val();
     if (age > 0) {
-      user.setAge(age, health);
+      user.setGalacticAges(health);
       $(".start").hide();
       $(".result").fadeIn();
     } else {

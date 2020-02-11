@@ -1,6 +1,6 @@
 export class Person {
-  constructor() {
-    this.age = 0;
+  constructor(age) {
+    this.age = age;
     this.lifeX = 72;
     this.ageMercury = 0;
     this.ageVenus = 0;
@@ -18,8 +18,7 @@ export class Person {
     this.pastJupiter = 0;
   }
 
-  setAge(age, level) {
-    this.age = age;
+  setGalacticAges(level) {
     this.ageMercury = parseInt(this.age / .24);
     this.ageVenus = parseInt(this.age / .62);
     this.ageMars = parseInt(this.age / 1.88);
