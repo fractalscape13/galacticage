@@ -23,14 +23,13 @@ $(document).ready(function() {
   //click function to see information for each planet
   $(".planet").click(function() {
     let currentPlanet = $(this).attr("value");
-    user.showInfo(currentPlanet);
-    $("#outputPlanet").text(user.currentPlanet);
-    $("#outputAge").text(user.currentAge);
-    if (user.currentRemaining > 0) {
-      $("#outputRemaining").text(user.currentRemaining);
+    $("#outputPlanet").text(currentPlanet);
+    $("#outputAge").text(user['age'+currentPlanet]);
+    if (user['remaining'+currentPlanet] > 0) {
+      $("#outputRemaining").text(user['remaining'+currentPlanet]);
       $("#outputRemainBox").show();
     } else {
-      $("#outputPast").text(user.currentPast);
+      $("#outputPast").text(user['past'+currentPlanet]);
       $("#outputPastBox").show();
     }
     $("#output").fadeIn();
